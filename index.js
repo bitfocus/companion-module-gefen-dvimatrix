@@ -42,7 +42,7 @@ instance.prototype.init_tcp = function() {
 	}
 
 	if (self.config.port === undefined) {
-		self.config.port = 8023;
+		self.config.port = 23;
 	}
 
 	if (self.config.host) {
@@ -89,6 +89,14 @@ instance.prototype.config_fields = function () {
 			width: 6,
 			default: '192.168.0.1',
 			regex: self.REGEX_IP
+		},
+		{
+			type: 'textinput',
+			id: 'port',
+			label: 'Port',
+			width: 6,
+			default: '23',
+			regex: self.REGEX_PORT
 		}
 	]
 };
