@@ -59,6 +59,7 @@ instance.prototype.init_tcp = function() {
 
 		self.socket.on('connect', function () {
 			debug('Connected');
+			self.socket.send('\r\n');
 		});
 
 		// if we get any data, display it to stdout
@@ -296,7 +297,7 @@ instance.prototype.action = function(action) {
 
 	if (cmd !== undefined) {
 		if (self.socket !== undefined && self.socket.connected) {
-			self.socket.send(cmd + '\n');
+			self.socket.send(cmd + '\r\n');
 		} else {
 			debug('Socket not connected :(');
 		}
