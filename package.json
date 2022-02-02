@@ -1,8 +1,10 @@
 {
 	"name": "gefen-dvimatrix",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"api_version": "1.0.0",
-	"keywords": [ "Matrix" ],
+	"keywords": [
+		"Matrix"
+	],
 	"manufacturer": "Gefen",
 	"product": "DVI Matrix",
 	"shortname": "dvi-matrix",
